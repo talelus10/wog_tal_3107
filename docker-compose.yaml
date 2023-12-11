@@ -1,0 +1,9 @@
+version: '3.1'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: talelus10/tal_wog:latest
+    ports:
+      - 8777:5000
