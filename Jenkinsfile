@@ -15,13 +15,6 @@ pipeline {
                 checkout scm
             }
         }
-	stage('Download docker compose') {
-            steps {
-                script {
-                    bat "curl -L https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-Windows-x86_64.exe -o C:\\docker-compose.exe"
-                }
-            }
-        }
 
 
         stage('Build the docker compose') {
