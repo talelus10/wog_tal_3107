@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_COMPOSE_VERSION = '1.26.0'
+        DOCKER_COMPOSE_VERSION = '2.23.0'
         DOCKER_IMAGE_NAME = 'talelus10/tal_wog:latest'
     }
 
