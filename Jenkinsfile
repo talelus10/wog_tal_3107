@@ -15,14 +15,14 @@ pipeline {
                 checkout scm
             }
         }
-
-        stage('Download docker compose') {
+	stage('Download docker compose') {
             steps {
                 script {
-                    bat "curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-Windows-x86_64.exe -o C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker-compose.exe"
+                    bat "curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-Windows-x86_64.exe -o C:\Program Files\Docker\Docker\resources\bin\docker-compose.exe"
                 }
             }
         }
+
 
         stage('Build the docker compose') {
             steps {
